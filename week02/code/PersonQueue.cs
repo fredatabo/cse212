@@ -14,6 +14,9 @@ public class PersonQueue
     public void Enqueue(Person person)
     {
         _queue.Insert(0, person);
+         _queue.RemoveAt(0);
+          return person;
+
     }
 
     public Person Dequeue()
